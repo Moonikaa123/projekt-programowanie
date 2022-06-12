@@ -1,0 +1,23 @@
+<%@ page import="com.example.projekt.ProjektApplication" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Twoj wynik: </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <p>Poprawne odpowiedzi to: </p>
+    <b><p>Jaki pierwiastek jest "paliwem" gwiazdy?</p></b>
+    <p>"Wodor i hel"</p>
+    <b><p>Ile zajmuje najdluzszy etap zycia gwiazdy?</p></b>
+    <p>"90%"</p>
+    <b><p>Jaka gwiazda polozona jest najblizej Ziemi?</p></b>
+    <p>"Slonce"</p>
+    <b><p>Od czego zalezy dlugosc zycia gwiazdy?</p></b>
+    <p>"Masy"</p>
+    <p th:text="'Ilosc Twoich poprawnych odpowiedzi to: ' + ${}" />
+
+</main>
+</body>
+</html>
